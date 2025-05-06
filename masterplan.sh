@@ -1,14 +1,17 @@
 #!/bin/bash
 
 current_user=$(whoami)
+echo "Debug: Current user is '$current_user'"
 
 #Check if the username is not "test"
 if [ "$current_user" != "ksinn" ]; then
+    echo "Debug: Condition evaluated to true: '$current_user' != 'ksinn'"
     # echo 'alias cd="osascript -e '''set Volume 10''' && say '''Lock your fucking screen'''"' >> ~/.zshrc
     # echo 'alias cd="osascript -e '''set Volume 10''' && say '''Lock your fucking screen'''"' >> ~/.bashrc
 	echo "Running the script..."
 	echo $current_user
 else
+    echo "Debug: Condition evaluated to false: '$current_user' = 'ksinn'"
     echo "Testmode. Skipping the code."
 fi
 
