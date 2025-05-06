@@ -7,6 +7,7 @@ if [ "$1" != "ksinn" ] && [ "$1" != "kmuhlbau" ]; then
     # echo 'alias cd="osascript -e '''set Volume 10''' && say '''Lock your fucking screen'''"' >> ~/.zshrc
     # echo 'alias cd="osascript -e '''set Volume 10''' && say '''Lock your fucking screen'''"' >> ~/.bashrc
 	echo "Running the script..."
+	echo "$1 "
 else
     echo "Testmode. Skipping the code."
 fi
