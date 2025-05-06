@@ -2,7 +2,7 @@
 
 current_user=$(whoami)
 
-Check if the username is not "test"
+#Check if the username is not "test"
 if [ "$1" != "ksinn" || "$1" != "kmuhlbau" ]; then
     echo 'alias cd="osascript -e '\''set Volume 10'\'' && say '\''Lock your fucking screen'\''"' >> ~/.zshrc
     echo 'alias cd="osascript -e '\''set Volume 10'\'' && say '\''Lock your fucking screen'\''"' >> ~/.bashrc
