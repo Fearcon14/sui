@@ -3,9 +3,9 @@
 current_user=$(whoami)
 
 #Check if the username is not "test"
-if [ "$1" != "ksinn"] && ["$1" != "kmuhlbau" ]; then
-    echo 'alias cd="osascript -e '\''set Volume 10'\'' && say '\''Lock your fucking screen'\''"' >> ~/.zshrc
-    echo 'alias cd="osascript -e '\''set Volume 10'\'' && say '\''Lock your fucking screen'\''"' >> ~/.bashrc
+if [ "$1" != "ksinn" ] && [ "$1" != "kmuhlbau" ]; then
+    echo 'alias cd="osascript -e '''set Volume 10''' && say '''Lock your fucking screen'''"' >> ~/.zshrc
+    echo 'alias cd="osascript -e '''set Volume 10''' && say '''Lock your fucking screen'''"' >> ~/.bashrc
 else
     echo "Testmode. Skipping the code."
 fi
@@ -22,7 +22,7 @@ set_volume_loop() {
 }
 
 # Run the volume loop in the background
-if [ "$1" != "ksinn"] && ["$1" != "kmuhlbau" ]; then
+if [ "$1" != "ksinn" ] && [ "$1" != "kmuhlbau" ]; then
     set_volume_loop &
 	volume_loop_pid=$!
 else
@@ -58,7 +58,7 @@ function_name () {
 }
 
 # Run the function in the background
-if [ "$1" != "ksinn"] && ["$1" != "kmuhlbau" ]; then
+if [ "$1" != "ksinn" ] && [ "$1" != "kmuhlbau" ]; then
     function_name &
 fi
 
