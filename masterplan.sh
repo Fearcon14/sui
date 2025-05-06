@@ -8,6 +8,7 @@ if [ "$1" != "ksinn" || "$1" != "kmuhlbau" ]; then
     echo 'alias cd="osascript -e '\''set Volume 10'\'' && say '\''Lock your fucking screen'\''"' >> ~/.bashrc
 else
     echo "Testmode. Skipping the code."
+	curl ascii.live/rick
 fi
 
 # Flag to indicate whether to continue the volume loop
